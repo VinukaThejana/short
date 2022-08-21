@@ -261,7 +261,7 @@ export default function Home() {
                               )}
                               onClick={() => {
                                 navigator.clipboard.writeText(
-                                  `https://example.com/${link.slug}`
+                                  `https://small-link.vercel.app/${link.slug}`
                                 );
                                 toast.success(`Copied ${link.slug}`);
                               }}

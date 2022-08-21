@@ -116,7 +116,7 @@ export default function Home() {
 
     toast.success("Created the shortned URL");
     toast.success("Copied the URL to the clipboard");
-    navigator.clipboard.writeText(`https://short-link.vercel.app/${data.slug}`);
+    navigator.clipboard.writeText(`https://small-link.vercel.app/${data.slug}`);
     await refetch();
     reset();
   };
@@ -188,7 +188,7 @@ export default function Home() {
 
                 <div className="mt-1 flex rounded-md shadow-sm w-72 sm:w-96">
                   <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
-                    short-link/
+                    small-link/
                   </span>
                   <input
                     {...register("slug")}
